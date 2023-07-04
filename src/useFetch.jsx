@@ -6,7 +6,7 @@ const useFetch = (url) => {
 
     useEffect(()=>{
         const abortCont = new AbortController() ;
-        fetch(url,{signal : abortCont.signal,timeout: 5000})
+        fetch(url,{signal : abortCont.signal})
             .then(res=> {
                 if (!res.ok) {
                     throw Error ("we couldn't find your position");

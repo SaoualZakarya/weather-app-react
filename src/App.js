@@ -1,5 +1,8 @@
 import './index'
 import CityName from "./CityName";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+library.add(faLocationDot);
 
 function App() {
   return (
