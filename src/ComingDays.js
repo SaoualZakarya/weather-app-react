@@ -1,7 +1,7 @@
 import useFetch from "./useFetch";
 
 const ComingDays = ({ myId }) => {
-    const { data, isPending, error } = useFetch(`http://api.openweathermap.org/data/2.5/forecast?id=${myId}&appid=ef683dcb921bc2b625ee436dac37c640`);
+    const { data } = useFetch(`https://api.openweathermap.org/data/2.5/forecast?id=${myId}&appid=ef683dcb921bc2b625ee436dac37c640`);
 
     return (
         <>
